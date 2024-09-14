@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorting Dropdown</title>
+    <!-- Include Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Include Bootstrap Datepicker CSS -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Include Bootstrap Datepicker JS -->
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
+    <script src="js/calculate.js"></script>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@100&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-custom nav-bar text-center">
+        <div class="container-fluid">
+            <a class="navbar-brand navbar-brand-custom text-center text-lg-end kanit-bold" href="#">BYOUBOOKING.COM</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                <ul class="navbar-nav mb-2 mb-lg-0">
+                    <li class="nav-item ">
+                        <a class="nav-link kanit-semibold" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link kanit-semibold" href="aboutus.html">About Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <h4 class="Margin-for-top kanit-semibold">ประเภทห้องพัก</h4>
+
+        <!-- start copy -->
+
+        <div class="row Margin-for-top">
+            <div class="col-12 col-md-4">
+                <div class="container kanit-semibold">
+                    <div class="row">
+                        <div class="col">
+                            <h5 class="kanit-semibold">ห้องดีลักซ์ เตียงคิงไซส์</h5>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col hotel-detail"><img src="img/hotelroom1/G+ºß+-ñ+T-++ñ+-1.jpg"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col bg-roomDetail-card ">
+                            <div class="icon-display-flex">
+                                <span class="material-symbols-outlined"> bed </span>
+                                <h6 class="text-margin kanit-semibold"> เตียงคิงไซส์ 1 เตียง </h6>
+                            </div>
+                            <div class="row">
+                                <div class="col-6 margin-for-text1">
+                                    <div class=" icon-display-flex">
+                                        <span class="material-symbols-outlined"> apartment </span>
+                                        <h6 class="text-margin kanit-semibold"> วิวเมือง </h6>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class=" icon-display-flex">
+                                        <span class="material-symbols-outlined"> grid_4x4 </span>
+                                        <h6 class="text-margin kanit-semibold"> 35 ตร.ม. </h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-6 margin-for-text1">
+                                    <div class=" icon-display-flex">
+                                        <span class="material-symbols-outlined"> shower </span>
+                                        <h6 class="text-margin kanit-semibold"> ฝักบัว </h6>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class=" icon-display-flex">
+                                        <span class="material-symbols-outlined"> smoke_free </span>
+                                        <h6 class="text-margin kanit-semibold"> ห้ามสูบบุหรี่ </h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-6 margin-for-text1">
+                                    <div class=" icon-display-flex">
+                                        <span class="material-symbols-outlined"> mode_fan </span>
+                                        <h6 class="text-margin kanit-semibold"> เครื่องปรับอากาศ </h6>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class=" icon-display-flex">
+                                        <span class="material-symbols-outlined"> wifi </span>
+                                        <h6 class="text-margin kanit-semibold"> Wi-Fi Free </h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-8 margin-info-top " id="infoScript">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-md-4">
+                            <div class="row">
+                                <div class="col-4 bg-roomDetail-card2 text-center padding-top-text">รายละเอียด</div>
+                            </div>
+                            <div class="row">
+                                <div class="col-4 font-fix bg-roomDetail-card3 padding-top-text1">อาหารเช้าสำหรับ 2
+                                    คน
+                                    </br> ขอเงินคืนไม่ได้ </br> ชำระเงินล่วงหน้าทางออนไลน์</div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <div class="row">
+                                <div class="col-4 bg-roomDetail-card2 text-center padding-top-text">ผู้เข้าพัก</div>
+                            </div>
+                            <div class="row">
+                                <div class="col-4 bg-roomDetail-card3 text-center padding-top-text2"><button
+                                        id="minus">-</button>
+
+                                    <p id="num" class="margin-num" value="1">1 คน</p>
+                                    <button id="plus">+</button>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <div class="row">
+                                <div class="col-4 bg-roomDetail-card2 text-center padding-top-text">ราคา/ห้อง/คืน
+                                </div>
+                            </div>
+                            <div class="row text-center">
+                                <div class="col-4 bg-roomDetail-card3 padding-top-text2">
+                                    <h2 id="roomPrice" class="margin-for-text ">8400</h2>
+                                    <a link href="calculate.html" id="resultOfCal">
+                                        <div class="button-box">
+                                            <h3>จอง</h3>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- end copy -->
+
+        <div class="row Margin-for-top margin-bottom-footer">
+            <div class="col-12 col-md-4">
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <h5 class="kanit-semibold">ห้องดีลักซ์ เตียงแฝด</h5>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col hotel-detail"><img src="img/hotelroom1/G+ºß+-ñ+T-++ñ+-2.jpg"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col bg-roomDetail-card ">
+                            <div class="icon-display-flex">
+                                <span class="material-symbols-outlined"> bed </span>
+                                <h6 class="text-margin kanit-semibold"> เตียงคิงไซส์ 2 เตียง </h6>
+                            </div>
+                            <div class="row">
+                                <div class="col-6 margin-for-text1">
+                                    <div class=" icon-display-flex">
+                                        <span class="material-symbols-outlined"> apartment </span>
+                                        <h6 class="text-margin kanit-semibold"> วิวเมือง </h6>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class=" icon-display-flex">
+                                        <span class="material-symbols-outlined"> grid_4x4 </span>
+                                        <h6 class="text-margin kanit-semibold"> 35 ตร.ม. </h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-6 margin-for-text1">
+                                    <div class=" icon-display-flex">
+                                        <span class="material-symbols-outlined"> shower </span>
+                                        <h6 class="text-margin kanit-semibold"> ฝักบัว </h6>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class=" icon-display-flex">
+                                        <span class="material-symbols-outlined"> smoke_free </span>
+                                        <h6 class="text-margin kanit-semibold"> ห้ามสูบบุหรี่ </h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-6 margin-for-text1">
+                                    <div class=" icon-display-flex">
+                                        <span class="material-symbols-outlined"> mode_fan </span>
+                                        <h6 class="text-margin kanit-semibold"> เครื่องปรับอากาศ </h6>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class=" icon-display-flex">
+                                        <span class="material-symbols-outlined"> wifi </span>
+                                        <h6 class="text-margin kanit-semibold"> Wi-Fi Free </h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-8 margin-info-top " id="infoScript">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-md-4">
+                            <div class="row">
+                                <div class="col-4 bg-roomDetail-card2 text-center padding-top-text">รายละเอียด</div>
+                            </div>
+                            <div class="row">
+                                <div class="col-4 font-fix bg-roomDetail-card3 padding-top-text1">อาหารเช้าสำหรับ 2
+                                    คน
+                                    </br> ขอเงินคืนไม่ได้ </br> ชำระเงินล่วงหน้าทางออนไลน์</div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <div class="row">
+                                <div class="col-4 bg-roomDetail-card2 text-center padding-top-text">ผู้เข้าพัก</div>
+                            </div>
+                            <div class="row">
+                                <div class="col-4 bg-roomDetail-card3 text-center padding-top-text2"><button
+                                        id="minus1">-</button>
+
+                                    <p id="num1" class="margin-num" value="1">1 คน</p>
+                                    <button id="plus1">+</button>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <div class="row">
+                                <div class="col-4 bg-roomDetail-card2 text-center padding-top-text">ราคา/ห้อง/คืน
+                                </div>
+                            </div>
+                            <div class="row text-center">
+                                <div class="col-4 bg-roomDetail-card3 padding-top-text2">
+                                    <h2 id="roomPrice1" class="margin-for-text ">8600</h2>
+                                    <a link href="calculate2.html" id="resultOfCal">
+                                        <div class="button-box">
+                                            <h3>จอง</h3>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</body>
+
+</html>

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Container with Pink Background - Bootstrap</title>
+    <!-- CSS Bootstrap -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- JavaScript Bootstrap และ jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@100&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <script src="js/script.js"></script>
+
+    <div class="container mt-3">
+        <!-- Content here -->
+        <div class="row">
+            <div class="col-12 col-md-8">
+                <form class="custom-bg ">
+                    <h4 style="text-align: center;" class="kanit-semibold">กรุณากรอกข้อมูลของท่าน</h4><br>
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">ชื่อ-นามสกุล</label>
+                        <input type="text" class="form-control" id="fullname">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label">หมายเลขเบอร์โทรศัพท์</label>
+                        <input type="text" class="form-control" id="phone">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">อีเมล</label>
+                        <input type="email" class="form-control" id="email1">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">ยืนยันอีเมลอีกครั้ง</label>
+                        <input type="email" class="form-control" id="email2">
+                        <div id="emailHelp" class="form-text">เราจะส่งใบยืนยันการจองที่พักไปให้ทางอีเมลนี้</div>
+                    </div>
+                    <div class="mb-3 form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label" for="exampleCheck1">ยินยอม</label>
+                    </div>
+                    <label for="exampleInputBedType" class="form-label"
+                        style="font-weight: bold;">ขอรับบริการเพิ่มเติมจากที่พัก</label>
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">เลือกประเภทห้อง</label>
+                        <div class="col-sm-10 d-flex align-items-center">
+                            <div class="form-check mr-3">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                    id="flexRadioDefault1">
+                                <label class="form-check-label" for="flexRadioDefault1">ห้องปลอดบุหรี่</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                    id="flexRadioDefault2" checked>
+                                <label class="form-check-label" for="flexRadioDefault2">ห้องสูบบุหรี่ได้</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputBedType" class="form-label">เลือกประเภทเตียง</label>
+                        <div class="col-sm-10 d-flex align-items-center">
+                            <div class="form-check mr-3">
+                                <input class="form-check-input" type="radio" name="bedType2" id="kingSizeBed">
+                                <label class="form-check-label" for="kingSizeBed">เตียงใหญ่</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="bedType2" id="twinBed" checked>
+                                <label class="form-check-label" for="twinBed">เตียงแฝด</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputBedType" class="form-label">กรุณาเลือกบริการที่ต้องการ
+                            แล้วเราจะแจ้งให้ที่พักทราบทันที</label>
+                        <div class="col-sm-10">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="service1">
+                                <label class="form-check-label" for="service1">ห้องพักอยู่ชั้นสูง</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="service2">
+                                <label class="form-check-label"
+                                    for="service2">เตียงสำหรับเด็ก(อาจมีค่าใช้จ่ายเพิ่มเติม)</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="service3">
+                                <label class="form-check-label" for="service3">บริการรับส่งสนามบิน</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="service4">
+                                <label class="form-check-label" for="service4">ห้องเงียบสงบ</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label
+                            class="form-label">[บริการอื่นๆ]-กรุณาแจ้งรายละเอียดให้ที่พักทราบที่ช่องด้านล่างนี้<br>โดยเขียนเป็นภาษาอังกฤษ
+                            หรือ ไทย</label>
+                        <textarea class="form-control" id="otherServices" rows="5"></textarea>
+                    </div>
+
+                    <br>
+                    <button type="button" class="btn btn-primary" id="calculateBtn"><a href="prove.html">ยืนยัน</a></button>
+                </form>
+            </div>
+
+
+            <div class="col-12 col-md-4 Margin-for-top">
+                <div class="row custom-bg1 mb-4">
+                    <div class="col">
+                        <h3 class="text-center">ยอดรวม</h3>
+                    </div>
+                </div>
+
+                <!-- recieve place -->
+
+
+                <div class="row custom-bg2">
+                    <div class="col text-center">
+                        <div class="row">
+                            <div class="col">
+                                <p class="text-align-left"> จำนวนห้อง: </p>
+                                <p class="text-align-right" id="showNum">1</p><br><br>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <p class="text-align-left"> ค่าห้อง: </p>
+                                <p class="text-align-right" id="showPrice">2250</p><br><br>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <p class="text-align-left">ค่าธรรมเนียมการจอง: </p>
+                                <p class="text-align-right">ฟรี</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <h4 class="text-align-left kanit-semibold"> รวมราคาทั้งสิ้น: </h4>
+                                <h4 class="text-align-right kanit-semibold" id="showResult"></h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <script>
+                    // Retrieve num from local storage
+                    var num = localStorage.getItem('num');
+                    // Display the value
+                    document.getElementById('showNum').innerText = num;
+                </script>
+
+                <script>
+                    // Retrieve room price from local storage
+                    var roomPrice = localStorage.getItem('roomPrice');
+                    // Display the price
+                    document.getElementById('showPrice').innerText = roomPrice;
+                </script>
+
+                <script>
+                    // Retrieve result from local storage
+                    var result = localStorage.getItem('result');
+                    // Display the result
+                    document.getElementById('showResult').innerText = result;
+                </script>
+
+
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

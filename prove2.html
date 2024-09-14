@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Container with Pink Background - Bootstrap</title>
+    <!-- CSS Bootstrap -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- JavaScript Bootstrap และ jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@100&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <script src="js/script.js"></script>
+
+    <div class="container mt-3">
+        <!-- Content here -->
+        <div class="row">
+            <div class="col-12 col-md-8">
+                <form class="custom-bg">
+                    <h4 style="text-align: center;" class="kanit-semibold">กรุณาชำระเงินผ่านคิวอาร์โค้ด</h4><br>
+                    <div class="d-flex justify-content-center">
+                        <img src="img/Screenshot 2024-05-03 132642.png" alt="Your Image">
+                    </div>
+                    <br>
+                    <div class="d-flex justify-content-center">
+                        <img id="previewImage" src="#" alt="Your Image"
+                            style="display: none; max-width: 400px; max-height: 400px;">
+                    </div>
+                    <br>
+                    <div class="text-center">
+                        <input class="kanit-semibold" type="file" id="imageUpload" onchange="previewFile()">
+                        <button type="button" class="btn btn-primary kanit-semibold" onclick="testLogin()">ยืนยัน</button>
+                    </div>
+                </form>
+            </div>
+
+            <script>
+                function previewFile() {
+                    const preview = document.getElementById('previewImage');
+                    const file = document.getElementById('imageUpload').files[0];
+                    const reader = new FileReader();
+            
+                    reader.onloadend = function() {
+                        preview.src = reader.result;
+                        preview.style.display = 'block';
+                    }
+            
+                    if (file) {
+                        reader.readAsDataURL(file);
+                    } else {
+                        preview.src = '#';
+                        preview.style.display = 'none';
+                    }
+                }
+    
+                function testLogin() {
+                    const file = document.getElementById('imageUpload').files[0];
+                    if (file) {
+                        alert("File successfully uploaded!");
+                    } else {
+                        alert("Please upload a file first!");
+                    }
+                }
+            </script>
+
+            <div class="col-12 col-md-4 Margin-for-top">
+                <div class="row custom-bg1 mb-4">
+                    <div class="col">
+                        <h3 class="text-center">ยอดรวม</h3>
+                    </div>
+                </div>
+
+                <!-- recieve place -->
+
+
+                <div class="row custom-bg2">
+                    <div class="col text-center">
+                        <div class="row">
+                            <div class="col">
+                                <p class="text-align-left"> จำนวนห้อง: </p>
+                                <p class="text-align-right" id="showNum">1</p><br><br>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <p class="text-align-left"> ค่าห้อง: </p>
+                                <p class="text-align-right" id="showPrice">2250</p><br><br>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <p class="text-align-left">ค่าธรรมเนียมการจอง: </p>
+                                <p class="text-align-right">ฟรี</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <h4 class="text-align-left kanit-semibold"> รวมราคาทั้งสิ้น: </h4>
+                                <h4 class="text-align-right kanit-semibold" id="showResult"></h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <script>
+                    // Retrieve num from local storage
+                    var num = localStorage.getItem('num');
+                    // Display the value
+                    document.getElementById('showNum').innerText = num;
+                </script>
+
+                <script>
+                    // Retrieve room price from local storage
+                    var roomPrice = localStorage.getItem('roomPrice');
+                    // Display the price
+                    document.getElementById('showPrice').innerText = roomPrice;
+                </script>
+
+                <script>
+                    // Retrieve result from local storage
+                    var result = localStorage.getItem('result');
+                    // Display the result
+                    document.getElementById('showResult').innerText = result;
+                </script>
+
+
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
