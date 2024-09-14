@@ -1,0 +1,677 @@
+/* Style to make the image fill the container box */
+body {
+    background-image: linear-gradient(to bottom, #71d7e9, #d4ecf0);
+    /* Prevent background from repeating */
+    background-repeat: no-repeat;
+    font-family: "Kanit", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    min-height: 100vh;
+}
+
+.article-wrapper {
+    position: relative;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    transition: all 0.4s ease-in-out;
+    background: #fff;
+    margin: 10px;
+    padding: 0px;
+}
+
+.article-wrapper:hover {
+    box-shadow: none;
+}
+
+.article-wrapper img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 16px 16px 0 0;
+    object-fit: cover;
+    /* Ensure the image covers the entire container box */
+}
+
+.article-body {
+    padding: 24px;
+}
+
+.article-body h2 {
+    margin: 0 0 18px 0;
+    font-family: "Bebas Neue", cursive;
+    font-size: 1.9rem;
+    letter-spacing: 0.06em;
+    color: black;
+    transition: color 0.3s ease-out;
+}
+
+.article-body p {
+    margin-bottom: 20px;
+    font-size: 1rem;
+    line-height: 1.6rem;
+}
+
+.box-container {
+    background-color: #FF8800;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center; /* Align items horizontally to the center */
+    align-items: center; /* Align items vertically to the center */
+    padding: 20px; /* Add padding to the container */
+    max-width: 650px; /* Set the maximum width */
+    margin: 0 auto; /* Center the container horizontally */
+    height: 100px; /* Set a fixed height for demonstration */
+}
+
+.box-container-detail {
+    background-color: #FEE2BE;
+    border-radius: 10px;
+    display: flex;/* Align items horizontally to the center */ /* Align items vertically to the center */
+    padding: 20px; /* Add padding to the container */
+    max-width: 90%; /* Set the maximum width */
+    margin: 0 auto; /* Center the container horizontally */
+    height: 100px; /* Set a fixed height for demonstration */
+}
+
+.box-container .form-group {
+    margin: 0px; /* Add some margin between form elements */
+}
+
+
+.container-with-bg {
+    background-image: url('img/unnamed\ \(1\).jpg');
+    background-size: cover; /* This will cover the entire container */
+    background-position: center; /* This will center the background image */
+    padding: 20px; /* Optional: Add padding to the container if needed */
+}
+
+.navbar-custom {
+    background-color: #006A7D;
+}
+
+.navbar-custom .navbar-nav .nav-link {
+    color: #ffffff; /* Set font color to white */
+}
+
+.navbar-brand-custom {
+    color: #ffffff; /* Set font color to white */
+}
+
+footer {
+    background-color: #333; /* Background color */
+    color: #fff; /* Text color */
+    padding: 20px; /* Padding around content */
+    text-align: center; /* Center-align text */
+    left: 0; /* Align to left edge */
+    bottom: 0; /* Align to bottom */
+    width: 100%; /* Full width */
+    padding: 65px;
+}
+
+.carousel-item {
+    height: 0;
+    padding-top: calc(100% / (16/9)); /* 16:9 aspect ratio, adjust as needed */
+    position: relative;
+    overflow: hidden;
+}
+
+.carousel-item img {
+    margin-top: 50px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.carousel-itm img {
+    max-height: 100%; /* ทำให้รูปภาพใน Carousel Item ไม่เกินความสูงของ Carousel */
+    width: auto; /* ปรับขนาดความกว้างให้เหมาะสม */
+}
+
+
+.carousel-itm img {
+    height: 415px;
+ /* Adjust the height as needed */
+    object-fit: cover; /* Maintain aspect ratio and cover the entire area */
+}
+
+.carousel-itm img {
+    height: 390px;
+ /* Adjust the height as needed */
+    object-fit: cover; /* Maintain aspect ratio and cover the entire area */
+}
+
+.hotel-detail{
+    margin: 10px 0px 10px 0px;
+}
+
+.hotel-detail img {
+    border-radius: 5px;
+    max-height: 180px;
+    max-width: 288px; /* Adjust the height as needed */
+    object-fit: cover; /* Maintain aspect ratio and cover the entire area */
+}
+
+.hotel-detail-box {
+    background: #FEE2BE;
+    width: 285.06px;
+    margin: 5px 0px 0px 0px;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.hotel-detail-box1 {
+    background: #FEE2BE;
+    width: 285.06px;
+    height: 180px;
+    margin: 5px 0px 0px 0px;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.bg-pink {
+    background-color: rgb(201, 46, 46);
+    min-height: 100vh;
+    /* Set minimum height to 100% of viewport height */
+    padding: 40px;
+    /* Add padding to maintain space between box and container edges */
+}
+
+.white-box {
+    background-color: white;
+    height: 500%;
+}
+
+.custom-bg {
+    background-color: #f5d9b4;
+    /* Pink color */
+    padding: 20px;
+    /* Adjust padding as needed */
+    border-radius: 10px;
+    /* Optional: Add border radius for a rounded look */
+}
+
+.custom-bg1 {
+    background-color: #000000;
+    color: white;
+    /* Pink color */
+    padding: 20px 0px 20px 0px;
+    /* Adjust padding as needed */
+    border-radius: 10px;
+    /* Optional: Add border radius for a rounded look */
+}
+
+.custom-bg2 {
+    background-color: #fcfcfc;
+    /* Pink color */
+    padding: 20px 0px 20px 0px;
+    /* Adjust padding as needed */
+    border-radius: 10px;
+    /* Optional: Add border radius for a rounded look */
+}
+
+.text-align-left {
+    text-align: left;
+    float: left;
+    margin-left: 25px;
+}
+
+.text-align-right {
+    text-align: right;
+    float: right;
+    margin-right: 25px;
+}
+
+.font-fix p {
+    font-size: 14px;
+}
+
+.bg-roomDetail-card {
+    background-color: #FEE2BE;
+    max-width: 310px;
+    border-radius: 5px;
+}
+
+.bg-roomDetail-card2 {
+    background-color: #fccf94;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    width: 240px;
+    height: 45px;
+}
+
+.bg-roomDetail-card3 {
+    background-color: #91c2ca;
+    border-radius: px;
+    width: 240px;
+    height: 220px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.button-move-down {
+    margin-top: 20px;
+}
+
+.padding-top-text {
+    padding-top: 10px;
+}
+
+.padding-top-text1 {
+    padding-left: 20px;
+    padding-top: 10px;
+}
+
+.padding-top-text2 {
+    padding-top: 45px;
+}
+
+.button-style{
+    background-color: #83deee;
+}
+
+.button-box {
+    margin-top: 45px;
+    margin-left: 35px;
+    color: white;
+    background-color: #398f9e;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center; /* Align items horizontally to the center */
+    align-items: center; /* Align items vertically to the center */
+    max-width: 150px;
+    max-height: 100px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    text-decoration: none; /* Remove underline on hover */
+    color: inherit; /* Use parent's color on hover */
+}
+
+.margin-for-text {
+    margin-top: 30px;
+}
+
+.Margin-for-top {
+    margin-top: 30px;
+}
+
+.text-margin {
+    margin-top: 1px;
+    margin-left: 5px;
+}
+
+.margin-for-text1 {
+    margin: 0px 0px 0px 0px;
+}
+
+.icon-display-flex {
+    display: flex;
+    padding: 10px;
+}
+
+.margin-info-top {
+    margin-top: 90px;
+}
+
+.margin-num {
+    margin-top: 12px;
+}
+
+.margin-bottom-footer {
+    margin-bottom: 50px;
+}
+
+main {
+    flex: 1; /* Allow main content to grow to fill available space */
+}
+
+footer {
+    background-color: #333; /* Set background color */
+    color: white; /* Set text color */
+    text-align: center; /* Center align text */
+    padding: 20px 0; /* Add padding */
+    width: 100%; /* Set width to cover entire page */
+}
+
+
+
+
+
+/***************************LULU***********************/
+
+
+
+.article-wrapper {
+    position: relative;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    transition: all 0.4s ease-in-out;
+    background: #fff;
+    margin: 10px;
+    padding: 0px;
+}
+
+.article-wrapper:hover {
+    box-shadow: none;
+}
+
+.article-wrapper img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 16px 16px 0 0;
+    object-fit: cover;
+    /* Ensure the image covers the entire container box */
+}
+
+.article-body {
+    padding: 24px;
+}
+
+.article-body h2 {
+    margin: 0 0 18px 0;
+    font-family: "Bebas Neue", cursive;
+    font-size: 1.9rem;
+    letter-spacing: 0.06em;
+    color: black;
+    transition: color 0.3s ease-out;
+}
+
+.article-body p {
+    margin-bottom: 20px;
+    font-size: 1rem;
+    line-height: 1.6rem;
+}
+
+.box-container {
+    background-color: #FF8800;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    /* Align items horizontally to the center */
+    align-items: center;
+    /* Align items vertically to the center */
+    padding: 20px;
+    /* Add padding to the container */
+    max-width: 650px;
+    /* Set the maximum width */
+    margin: 0 auto;
+    /* Center the container horizontally */
+    height: 100px;
+    /* Set a fixed height for demonstration */
+}
+
+
+.box-container .form-group {
+    margin: 0px;
+    /* Add some margin between form elements */
+}
+
+.container-with-bg {
+    /* background-image: url('img/unnamed\ \(1\).jpg'); */
+    background-size: cover;
+    /* This will cover the entire container */
+    background-position: center;
+    /* This will center the background image */
+    padding: 20px;
+    /* Optional: Add padding to the container if needed */
+}
+
+.navbar-custom {
+    background-color: #006A7D;
+}
+
+.navbar-custom .navbar-nav .nav-link {
+    color: #ffffff;
+    /* Set font color to white */
+}
+
+.navbar-brand-custom {
+    color: #ffffff;
+    /* Set font color to white */
+}
+
+@media (max-width: 991.98px) {
+    .navbar-brand-custom {
+        display: block;
+        margin: auto;
+        text-align: center;
+    }
+}
+
+.bgg {
+    background-color: red;
+}
+
+footer {
+    background-color: #333;
+    /* Background color */
+    color: #fff;
+    /* Text color */
+    padding: 20px;
+    /* Padding around content */
+    text-align: center;
+    /* Center-align text */
+    left: 0;
+    /* Align to left edge */
+    bottom: 0;
+    /* Align to bottom */
+    width: 100%;
+    /* Full width */
+    padding: 65px;
+}
+
+.box-container-detail {
+    background-color: #FEE2BE;
+    border-radius: 10px;
+    display: flex;
+    padding: 20px;
+    /* Add padding to the container */
+    max-width: 80%;
+    /* Set the maximum width */
+    margin: 0 auto;
+    /* Center the container horizontally */
+    height: 280px;
+    /* Set a fixed height for demonstration */
+}
+
+@media (max-width: 767px) {
+    /* Media query for mobile devices */
+    .box-container-detail {
+        height: 570px;
+    }
+}
+
+#carouselExampleFade {
+    max-height: 400px; /* ปรับความสูงตามที่ต้องการ */
+    overflow: hidden;
+}
+
+
+
+
+.bg-pink {
+    background-color: rgb(201, 46, 46);
+    min-height: 100vh;
+    /* Set minimum height to 100% of viewport height */
+    padding: 40px;
+    /* Add padding to maintain space between box and container edges */
+}
+
+.white-box {
+    background-color: white;
+    height: 500%;
+}
+
+.custom-bg {
+    background-color: #d6d6d6;
+    /* Pink color */
+    padding: 20px;
+    /* Adjust padding as needed */
+    border-radius: 10px;
+    /* Optional: Add border radius for a rounded look */
+}
+
+.room-detail-bgcolor{
+    background-color: red;
+    border-radius: 10px;
+    max-height: 100px;
+    max-height: 100px;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+
+
+.custom-button-room-select {
+    background-color: #E95C00;
+    color: white;
+    font-size: 20px;
+    padding: 10px 20px;
+    max-width: 200px;
+    width: 100%;
+    box-sizing: border-box;
+    height: 60px;
+    display: flex;
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+}
+
+
+
+
+.custom-button-room-select:hover {
+    background-color: #FF7F00; /* เมื่อโฮเวอร์เข้ามา สีพื้นหลังจะเปลี่ยนเป็นสีส้ม */
+    color: #fff; /* เมื่อโฮเวอร์เข้ามา สีของตัวอักษรจะเปลี่ยนเป็นสีขาว */
+}
+
+.custom-text-color-au {
+    color: #006A7D; /* Change this to the color you desire */
+}
+
+
+.kanit-thin {
+    font-family: "Kanit", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+  }
+  
+  .kanit-extralight {
+    font-family: "Kanit", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+  }
+  
+  .kanit-light {
+    font-family: "Kanit", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .kanit-regular {
+    font-family: "Kanit", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .kanit-medium {
+    font-family: "Kanit", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  .kanit-semibold {
+    font-family: "Kanit", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+  }
+  
+  .kanit-bold {
+    font-family: "Kanit", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .kanit-extrabold {
+    font-family: "Kanit", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+  }
+  
+  .kanit-black {
+    font-family: "Kanit", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+  }
+  
+  .kanit-thin-italic {
+    font-family: "Kanit", sans-serif;
+    font-weight: 100;
+    font-style: italic;
+  }
+  
+  .kanit-extralight-italic {
+    font-family: "Kanit", sans-serif;
+    font-weight: 200;
+    font-style: italic;
+  }
+  
+  .kanit-light-italic {
+    font-family: "Kanit", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+  }
+  
+  .kanit-regular-italic {
+    font-family: "Kanit", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .kanit-medium-italic {
+    font-family: "Kanit", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+  }
+  
+  .kanit-semibold-italic {
+    font-family: "Kanit", sans-serif;
+    font-weight: 600;
+    font-style: italic;
+  }
+  
+  .kanit-bold-italic {
+    font-family: "Kanit", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+  }
+  
+  .kanit-extrabold-italic {
+    font-family: "Kanit", sans-serif;
+    font-weight: 800;
+    font-style: italic;
+  }
+  
+  .kanit-black-italic {
+    font-family: "Kanit", sans-serif;
+    font-weight: 900;
+    font-style: italic;
+  }
+  

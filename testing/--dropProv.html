@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorting Dropdown</title>
+    <!-- Include Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Include Bootstrap Datepicker CSS -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <div class="container mt-5">
+        <h2>Sorting Dropdown</h2>
+        <div class="form-group">
+            <label for="sorting">Sort by:</label>
+            <select class="form-control" id="sorting">
+                <option value="price">Price</option>
+                <option value="province">Province</option>
+            </select>
+        </div>
+
+        <div class="form-group" id="provinceDropdown" style="display: none;">
+            <label for="province">Select Province:</label>
+            <select class="form-control" id="province">
+                <option value="Bangkok">Bangkok</option>
+                <option value="Chiangmai">Chiangmai</option>
+                <option value="Pattaya">Pattaya</option>
+            </select>
+        </div>
+
+        <div class="mt-3">
+            <div class="row" id="items">
+                <!-- Items will be displayed here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Include Bootstrap JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        // Sample items data
+        var items = [
+            { name: "Item 1", price: 1000, province: "Bangkok" },
+            { name: "Item 2", price: 2000, province: "Pattaya" },
+            { name: "Item 3", price: 500, province: "Chiangmai" },
+            { name: "Item 4", price: 1500, province: "Bangkok" }
+        ];
+
+        // Function to display items based on sorting option
+        function displayItems(sortBy) {
+            // Clear previous items
+            $("#items").empty();
+
+            // Filter and sort items based on selected option
+            if (sortBy === "price") {
+                items.sort((a, b) => a.price - b.price);
+            } else if (sortBy === "province") {
+                const selectedProvince = $("#province").val();
+                const filteredItems = items.filter(item => item.province === selectedProvince);
+                // Display filtered items
+                filteredItems.forEach(function (item) {
+                    $("#items").append(
+                        "<div class='col-3'>" +
+                        "<div class='card'>" +
+                        "<div class='card-body'>" +
+                        "<h5 class='card-title'>" + item.name + "</h5>" +
+                        "<p class='card-text'>Price: " + item.price + " Baht</p>" +
+                        "</div>" +
+                        "</div>" +
+                        "</div>"
+                    );
+                });
+                return; // No need to sort further if filtering by province
+            }
+
+            // Display sorted items if no province is selected
+            items.forEach(function (item) {
+                $("#items").append(
+                    "<div class='col-3'>" +
+                    "<div class='card'>" +
+                    "<div class='card-body'>" +
+                    "<h5 class='card-title'>" + item.name + "</h5>" +
+                    "<p class='card-text'>Price: " + item.price + " Baht</p>" +
+                    "</div>" +
+                    "</div>" +
+                    "</div>"
+                );
+            });
+        }
+
+        $(document).ready(function () {
+            // Initial display of items sorted by price
+            displayItems("price");
+
+            // Handle sorting dropdown change
+            $("#sorting").change(function () {
+                var sortBy = $(this).val();
+                displayItems(sortBy);
+
+                // Show/hide province dropdown based on sorting option
+                if (sortBy === "province") {
+                    $("#provinceDropdown").show();
+                } else {
+                    $("#provinceDropdown").hide();
+                }
+            });
+
+            // Handle province dropdown change
+            $("#province").change(function () {
+                var sortBy = $("#sorting").val();
+                displayItems(sortBy);
+            });
+        });
+    </script>
+
+</body>
+
+</html>
